@@ -9,12 +9,12 @@ public class Mover : MonoBehaviour
     public GameObject moverObject = null;
 
 
-    private Renderer renderer = null;
+    //private Renderer renderer = null;
     private bool isVisible = false;
 
     void Start()
     {
-        renderer = moverObject.GetComponent<Renderer>();
+        //renderer = moverObject.GetComponent<Renderer>();
     }
 
     void Update()
@@ -25,12 +25,12 @@ public class Mover : MonoBehaviour
 
     void IsVisible()
     {
-        if (renderer.isVisible) isVisible = true;
-        if (!renderer.isVisible && isVisible == true)
+        //if (renderer.isVisible) isVisible = true;
+        /*if (!renderer.isVisible && isVisible == true)
         {
             Debug.Log("Remove object, no longer seen by camera");
             Destroy(this.gameObject);
-        }
+        }*/
     }
 
     void OnTriggerEnter(Collider other)

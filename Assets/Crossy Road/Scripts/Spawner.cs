@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
         {
             int spawnCount = Random.Range(spawnCountMin, spawnCountMax);
 
-            for(int i = 0; i < spawnCount; i++)
+            for (int i = 0; i < spawnCount; i++)
             {
                 SpawnItem();
             }
